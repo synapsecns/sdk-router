@@ -1,7 +1,7 @@
 import invariant from 'tiny-invariant'
 import { NativeCurrency } from "./nativeCurrency"
-
-export abstract class Network { 
+import { GasToken } from "./gas"
+export class Network { 
     /**
      * Returns the chain ID of the network
      */
@@ -20,7 +20,7 @@ export abstract class Network {
      /**
       * Returns the native gas token of the network, as the NativeCurrency type
       */
-    public readonly currency?: NativeCurrency
+    public readonly currency?: GasToken
 
     /**
       * Returns an array of RPCs endpoints which could be used to connect to the network
@@ -43,3 +43,5 @@ export abstract class Network {
     }
 
 }
+
+export type NetworkIsh = Network | string | number
