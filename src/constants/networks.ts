@@ -34,7 +34,7 @@ export const SupportedNetworkList: Network[] = [
 }
 ]
 
-export var networkByChainID = (chainId: number): Network | undefined => { 
+export const networkByChainID = (chainId: number): Network | undefined => { 
     const x = SupportedNetworkList.find((el) => {
         return el.chainId == chainId
     })
