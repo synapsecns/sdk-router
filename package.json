@@ -1,11 +1,12 @@
 {
+  "name": "sdk-v2",
+  "description": "An SDK for interacting with the Synapse Protocol",
   "version": "0.1.0",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
-    "dist",
-    "src"
+    "dist"
   ],
   "engines": {
     "node": ">=10"
@@ -31,25 +32,22 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "sdk-v2",
-  "author": "aureliusbtc",
   "module": "dist/sdk-v2.esm.js",
-  "size-limit": [
-    {
-      "path": "dist/sdk-v2.cjs.production.min.js",
-      "limit": "10 KB"
-    },
-    {
-      "path": "dist/sdk-v2.esm.js",
-      "limit": "10 KB"
-    }
-  ],
   "devDependencies": {
-    "@size-limit/preset-small-lib": "^8.1.0",
+    "@types/big.js": "^4.0.5",
+    "@types/jest": "^24.0.25",
     "husky": "^8.0.1",
     "size-limit": "^8.1.0",
     "tsdx": "^0.14.1",
     "tslib": "^2.4.0",
     "typescript": "^4.8.3"
+  },
+  "dependencies": {
+    "@ethersproject/address": "^5.7.0",
+    "big.js": "^5.2.2",
+    "decimal.js-light": "^2.5.1",
+    "jsbi": "^4.3.0",
+    "tiny-invariant": "^1.2.0",
+    "toformat": "^2.0.0"
   }
 }
