@@ -1,5 +1,5 @@
 {
-  "name": "sdk-v2",
+  "name": "sdk-router",
   "description": "An SDK for interacting with the Synapse Protocol",
   "version": "0.1.0",
   "license": "MIT",
@@ -20,7 +20,6 @@
     "size": "size-limit",
     "analyze": "size-limit --why"
   },
-  "peerDependencies": {},
   "husky": {
     "hooks": {
       "pre-commit": "tsdx lint"
@@ -43,9 +42,12 @@
     "typescript": "^4.8.3"
   },
   "dependencies": {
+    "@ethersproject/abi": "^5.7.0",
     "@ethersproject/address": "^5.7.0",
+    "@ethersproject/contracts": "^5.7.0",
     "big.js": "^5.2.2",
     "decimal.js-light": "^2.5.1",
+    "ethers": "^5.7.2",
     "jsbi": "^4.3.0",
     "tiny-invariant": "^1.2.0",
     "toformat": "^2.0.0"

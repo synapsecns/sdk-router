@@ -2,22 +2,16 @@ import JSBI from 'jsbi';
 
 export enum SupportedChainId {
   MAINNET = 1,
-  ROPSTEN = 3,
-  RINKEBY = 4,
-  GOERLI = 5,
-  KOVAN = 42,
-
   ARBITRUM_ONE = 42161,
-  ARBITRUM_RINKEBY = 421611,
-
   OPTIMISM = 10,
-  OPTIMISTIC_KOVAN = 69,
-
   POLYGON = 137,
-  POLYGON_MUMBAI = 80001,
+}
 
-  CELO = 42220,
-  CELO_ALFAJORES = 44787,
+export const ROUTER_ADDRESS: object = {
+  [SupportedChainId.MAINNET]: '0x2796317b0fF8538F253012862c06787Adfb8cEb6',
+  [SupportedChainId.ARBITRUM_ONE]: '0x2796317b0fF8538F253012862c06787Adfb8cEb6',
+  [SupportedChainId.OPTIMISM]: '0x2796317b0fF8538F253012862c06787Adfb8cEb6',
+  [SupportedChainId.POLYGON]: '0x2796317b0fF8538F253012862c06787Adfb8cEb6',
 }
 
 // exports for external consumption
