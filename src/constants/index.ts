@@ -1,17 +1,13 @@
 import JSBI from 'jsbi';
 
 export enum SupportedChainId {
-  MAINNET = 1,
-  ARBITRUM_ONE = 42161,
-  OPTIMISM = 10,
-  POLYGON = 137,
+  ARBITRUM = 42161,
+  AVALANCHE = 43114,
 }
 
 export const ROUTER_ADDRESS: object = {
-  [SupportedChainId.MAINNET]: '0x2796317b0fF8538F253012862c06787Adfb8cEb6',
-  [SupportedChainId.ARBITRUM_ONE]: '0x2796317b0fF8538F253012862c06787Adfb8cEb6',
-  [SupportedChainId.OPTIMISM]: '0x2796317b0fF8538F253012862c06787Adfb8cEb6',
-  [SupportedChainId.POLYGON]: '0x2796317b0fF8538F253012862c06787Adfb8cEb6',
+  [SupportedChainId.ARBITRUM]: '0xb55dfB875e5C40A110d22b43BB842025E5e2C81B',
+  [SupportedChainId.AVALANCHE]: '0xe6ee2b0b52f330a2258818D8C24De67540df5268',
 }
 
 // exports for external consumption
