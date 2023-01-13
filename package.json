@@ -43,7 +43,9 @@
   },
   "dependencies": {
     "@ethersproject/abi": "^5.7.0",
+    "@ethersproject/abstract-provider": "^5.7.0",
     "@ethersproject/address": "^5.7.0",
+    "@ethersproject/bytes": "^5.7.0",
     "@ethersproject/contracts": "^5.7.0",
     "big.js": "^5.2.2",
     "decimal.js-light": "^2.5.1",
